@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <!-- Design by foolishdeveloper.com -->
-    <title>Glassmorphism login Form Tutorial in html css</title>
-
+    <title>Признайся: ладно я убил Джона Кеннеди</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;300&display=swap" rel="stylesheet">
     <style media="screen">
         *,
         *:before,
@@ -66,7 +68,7 @@
         }
 
         form * {
-            font-family: "Trebuchet MS";
+            font-family: 'League Spartan', sans-serif;
             color: #0a0a0a;
             letter-spacing: 0.5px;
             outline: none;
@@ -116,28 +118,30 @@
             border-radius: 5px;
             cursor: pointer;
         }
-        
-        button:hover{
+
+        button:hover {
             box-shadow: 4px 4px 4px rgba(113, 113, 113, 0.9);
             background-color: rgba(255, 255, 255, 0.9);
-        }    
+        }
 
     </style>
 </head>
 
 <body>
-    <div class="background">
-        <div class="shape"></div>
-        <div class="shape"></div>
+    <div class="content">
+        <div class="background">
+            <div class="shape"></div>
+            <div class="shape"></div>
+        </div>
+        <form>
+            <h3>Authentication</h3>
+            <label for="username">Enter Username:</label>
+            <input type="text" placeholder="Email or Phone" id="username">
+            <label for="password">Enter Password:</label>
+            <input type="password" placeholder="Password" id="password">
+            <button>Log In</button>
+        </form>
     </div>
-    <form>
-        <h3>Authentification</h3>
-        <label for="username">Enter Username:</label>
-        <input type="text" placeholder="Email or Phone" id="username">
-        <label for="password">Enter Password:</label>
-        <input type="password" placeholder="Password" id="password">
-        <button>Log In</button>
-    </form>
 
 
     <script>

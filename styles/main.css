@@ -1,0 +1,208 @@
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'League Spartan', sans-serif;
+    margin: 0;
+}
+
+.header {
+    padding: 5px;
+    text-align: center;
+    background: linear-gradient(to right,
+            #4c94e0,
+            #0a5fad);
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    background-color: #333;
+}
+
+.navbar a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.side-left {
+    flex: 15%;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+.main {
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+}
+
+.side-right {
+    flex: 15%;
+    background-color: #f1f1f1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+
+.footer {
+    padding: 5px;
+    text-align: center;
+    background: #ddd;
+    margin-bottom: 0;
+}
+
+.editbar {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+}
+
+.editbar-list {
+    margin: 0;
+    padding: 0;
+    display: block;
+    width: 100%;
+    list-style-type: none;
+}
+
+.editbar-item {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.editbar-item + .editbar-item {
+    margin-top: 20px;
+}
+
+.editbar-button {
+    font: inherit;
+    font-size: 1.5em;
+    font-weight: 600;
+    border: 0;
+    padding: 0;
+    height: 40px;
+    width: 100px;
+    border-radius: 5px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    position: relative;
+    color: black;
+}
+
+
+.editbar-button svg {
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    margin-left: 5px;
+    color: inherit;
+}
+
+.editbar-button:hover {
+    background-color: white;
+    color: #4c94e0;
+}
+
+#save-button:hover {
+    color: #00a693;
+}
+
+
+#delete-button:hover {
+    color: #e55137;
+}
+
+.editbar-switch {
+    width: 100%:
+}
+
+
+
+.editbar-switch {
+    display: table-cell;
+    position: relative;
+    width: 200px;
+    height: 140px;
+    box-sizing: border-box;
+    background-color: aquamarine;
+}
+
+.switch-cover {
+    height: 100px;
+    margin: 20px;
+    background-color: white;
+    box-shadow: 0 10px 20px -8px gray;
+    border-radius: 5px;
+}
+
+.swith-cover:before {
+    counter-increment: button-counter;
+    content: counter(button-counter);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: #d7e3e3;
+    font-size: 12px;
+    line-height: 1;
+    padding: 5px;
+}
+
+.switch-cover,
+.knobs,
+.layer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.button {
+    position: relative;
+    top: 50%;
+    width: 74px;
+    height: 36px;
+    margin: -20px auto 0 auto;
+    overflow: hidden;
+}
+
+
+
+
+@media screen and (max-width: 700px) {
+
+    .row,
+    .navbar,
+
+        {
+        flex-direction: column;
+    }
+
+    .editbar {
+        flex-direction: row;
+    }
