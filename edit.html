@@ -34,54 +34,64 @@
                 </div>
             </div>
             <h2>Toolbar</h2>
-            <h5>Document avatar:</h5>
-            <div class="fakeimg" style="height:200px;">Image</div> <!--Add-->
-            <h3>Document description:</h3>
-            <p>Data from database.</p>
-        </div>
-        <div class="main">
-            <h2>First Slide</h2>
-            <h5>Description if needed</h5>
-            <!--There I should place button-->
-            <div class="fakeimg" style="height:200px;">Image</div>
-            <p>Data from database.</p>
-            <br>
-            <h2>Second Slide</h2>
-            <h5>Description if needed</h5>
-            <div class="fakeimg" style="height:200px;">Image</div>
-            <p>Data from database.</p>
-            <p></p>
-        </div>
-        <div class="side-right">
-            <h2>Editbar</h2>
-            <div class="editbar">
-                <ul class="editbar-list">
-                    <li class="editbar-item"><button class="editbar-button"><i data-feather="file-plus"></i>New</button></li>
-                    <li class="editbar-item"><button class="editbar-button"><i data-feather="edit"></i>Edit</button></li>
-                    <li class="editbar-item" id="save-item"><button class="editbar-button" id="save-button"><i data-feather="save"></i>Save</button></li>
-                    <li class="editbar-item" id="delete-item"><button class="editbar-button" id="delete-button"><i data-feather="trash-2"></i>Delete</button></li>
-                </ul>
+            <h4>Add document avatar:</h4>
+            <div class="img-button-container">
+                <button class="img-button">
+                    <i data-feather="image"></i>
+                </button>
             </div>
+            <h4>Add document description:</h4>
+            <div class="description-button-container">
+                <button class="description-button">
+                    <i data-feather="plus"></i>
+                </button>
+            </div>
+        </div>
+        
+    <div class="main">
+        <h2>First Slide</h2>
+        <h5>Description if needed</h5>
+        <!--There I should place button-->
+        <div class="fakeimg" style="height:200px;">Image</div>
+        <p>Data from database.</p>
+        <br>
+        <h2>Second Slide</h2>
+        <h5>Description if needed</h5>
+        <div class="fakeimg" style="height:200px;">Image</div>
+        <p>Data from database.</p>
+        <p></p>
+    </div>
+    <div class="side-right">
+        <h2>Editbar</h2>
+        <div class="editbar">
+            <ul class="editbar-list">
+                <li class="editbar-item"><button class="editbar-button"><i data-feather="file-plus"></i>New</button></li>
+                <li class="editbar-item" href="#"><button class="editbar-button"><i data-feather="edit"></i>Edit</button></li>
+                <li class="editbar-item" id="save-item"><button class="editbar-button" id="save-button"><i data-feather="save"></i>Save</button></li>
+                <li class="editbar-item" id="delete-item"><button class="editbar-button" id="delete-button"><i data-feather="trash-2"></i>Delete</button></li>
+            </ul>
+        </div>
 
-            <h2>Private Mode</h2>
-            <div class="switch-container">
-                <div class="button-container">
-                    <div class="button r" id="switch">
-                        <input type="checkbox" class="checkbox" />
-                        <div class="knob"></div>
-                        <div class="layer"></div>
-                    </div>
+        <h2>Private Mode</h2>
+        <div class="switch-container">
+            <div class="button-container">
+                <div class="button r" id="switch">
+                    <input type="checkbox" class="checkbox" />
+                    <div class="knob"></div>
+                    <div class="layer"></div>
                 </div>
             </div>
         </div>
+    </div>
+    </div>
+    <div class="footer">
+        <h2>New opportunities with Stove Workplace</h2>
+    </div>
 
-        <div class="footer">
-            <h2>New opportunities with Stove Workplace</h2>
-        </div>
+    <script>
+        feather.replace()
 
-        <script>
-            feather.replace()
-        </script>
+    </script>
 
 </body>
 
