@@ -74,6 +74,35 @@ body {
     width: 100%;
 }
 
+.user-content
+{
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.user-content h3{
+    margin-top: 22px;
+    flex: 40%;
+    text-align: left;
+}
+
+
+.userimg{
+    flex: 60%;
+    width: 100%;
+    padding: 5px;
+    display: inline-block;
+}
+
+.userimg .avatar{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-left: 50%;
+    background-color: #aaa;
+}
+
 .editbar {
     display: flex;
     flex-direction: column;
