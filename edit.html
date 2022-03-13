@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Page Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <!--<script src="scripts/feather.js"></script>-->
+</head>
+
+<body>
+    <div class="header">
+        <h1>Stove Workplace</h1>
+    </div>
+
+    <div class="navbar">
+        <a href="#">My Profile</a>
+        <a href="#">My Files</a>
+        <a href="#">New File</a>
+        <a href="#">Stove Connection</a>
+    </div>
+
+    <div class="row">
+        <div class="side-left">
+            <div class="user-content">
+                <h3>@ Author</h3>
+                <div class="userimg">
+                    <div class="avatar"></div>
+                </div>
+            </div>
+            <h2>Toolbar</h2>
+            <h5>Document avatar:</h5>
+            <div class="fakeimg" style="height:200px;">Image</div> <!--Add-->
+            <h3>Document description:</h3>
+            <p>Data from database.</p>
+        </div>
+        <div class="main">
+            <h2>First Slide</h2>
+            <h5>Description if needed</h5>
+            <!--There I should place button-->
+            <div class="fakeimg" style="height:200px;">Image</div>
+            <p>Data from database.</p>
+            <br>
+            <h2>Second Slide</h2>
+            <h5>Description if needed</h5>
+            <div class="fakeimg" style="height:200px;">Image</div>
+            <p>Data from database.</p>
+            <p></p>
+        </div>
+        <div class="side-right">
+            <h2>Editbar</h2>
+            <div class="editbar">
+                <ul class="editbar-list">
+                    <li class="editbar-item"><button class="editbar-button"><i data-feather="file-plus"></i>New</button></li>
+                    <li class="editbar-item"><button class="editbar-button"><i data-feather="edit"></i>Edit</button></li>
+                    <li class="editbar-item" id="save-item"><button class="editbar-button" id="save-button"><i data-feather="save"></i>Save</button></li>
+                    <li class="editbar-item" id="delete-item"><button class="editbar-button" id="delete-button"><i data-feather="trash-2"></i>Delete</button></li>
+                </ul>
+            </div>
+
+            <h2>Private Mode</h2>
+            <div class="switch-container">
+                <div class="button-container">
+                    <div class="button r" id="switch">
+                        <input type="checkbox" class="checkbox" />
+                        <div class="knob"></div>
+                        <div class="layer"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <h2>New opportunities with Stove Workplace</h2>
+        </div>
+
+        <script>
+            feather.replace()
+        </script>
+
+</body>
+
+</html>
